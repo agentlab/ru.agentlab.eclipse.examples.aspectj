@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AspectJ Tutorial Java Code
+Bundle-SymbolicName: ru.agentlab.eclipse.examples.aspectj.java
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: AgentLab
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: ru.agentlab.eclipse.examples.aspectj.java
+Bundle-Activator: ru.agentlab.eclipse.examples.aspectj.java.impl.MyActivator
+Import-Package: org.osgi.framework

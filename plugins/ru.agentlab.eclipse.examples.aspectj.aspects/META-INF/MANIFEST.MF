@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AspectJ Tutorial Aspects
+Bundle-SymbolicName: ru.agentlab.eclipse.examples.aspectj.aspects; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: AgentLab
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.osgi.framework;version="1.3.0"
+Require-Bundle: ru.agentlab.eclipse.examples.aspectj.java,
+ org.aspectj.weaver,
+ org.aspectj.runtime
+Export-Package: ru.agentlab.eclipse.examples.aspectj.aspects;aspects=HelloAspectJ
+Eclipse-SupplementBundle: ru.agentlab.eclipse.examples.aspectj.java
