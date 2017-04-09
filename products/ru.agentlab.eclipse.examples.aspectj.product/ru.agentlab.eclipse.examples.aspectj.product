@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="AgentLab AspectJ Example" uid="ru.agentlab.eclipse.examples.aspectj.product" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="false">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-clean
+-console
+-debug
+-consoleLog
+      </programArgs>
+      <vmArgs>-Xms80m
+-XX:MaxPermSize=256m
+-Dosgi.framework.extensions=org.eclipse.equinox.weaving.hook
+-Daj.weaving.verbose=true
+-Dorg.aspectj.weaver.showWeaveInfo=true
+-Dorg.aspectj.osgi.verbose=true
+-Declipse.ignoreApp=true
+-Dosgi.noShutdown=true
+      </vmArgs>
+      <vmArgsLin>
+         <argsX86>-Xmx1536m</argsX86>
+         <argsX86_64>-Xmx4096m</argsX86_64>
+      </vmArgsLin>
+      <vmArgsMac>
+         <argsX86>-Xmx1536m</argsX86>
+         <argsX86_64>-Xmx4096m</argsX86_64>
+      </vmArgsMac>
+      <vmArgsWin>
+         <argsX86>-Xmx1536m</argsX86>
+         <argsX86_64>-Xmx4096m</argsX86_64>
+      </vmArgsWin>
+   </launcherArgs>
+
+   <windowImages/>
+
+
+   <launcher name="eclipse">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="org.apache.felix.gogo.command"/>
+      <plugin id="org.apache.felix.gogo.runtime"/>
+      <plugin id="org.apache.felix.gogo.shell"/>
+      <plugin id="org.apache.felix.scr"/>
+      <plugin id="org.aspectj.runtime"/>
+      <plugin id="org.aspectj.weaver"/>
+      <plugin id="org.eclipse.equinox.console"/>
+      <plugin id="org.eclipse.equinox.region" fragment="true"/>
+      <plugin id="org.eclipse.equinox.transforms.hook" fragment="true"/>
+      <plugin id="org.eclipse.equinox.weaving.aspectj"/>
+      <plugin id="org.eclipse.equinox.weaving.caching"/>
+      <plugin id="org.eclipse.equinox.weaving.hook" fragment="true"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.compatibility.state" fragment="true"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.osgi.util"/>
+      <plugin id="ru.agentlab.eclipse.examples.aspectj.aspects"/>
+      <plugin id="ru.agentlab.eclipse.examples.aspectj.java"/>
+   </plugins>
+
+   <features>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.equinox.weaving.aspectj" autoStart="true" startLevel="2" />
+      <plugin id="ru.agentlab.eclipse.examples.aspectj.java" autoStart="true" startLevel="3" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>
